@@ -1,0 +1,162 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[twoside]{article}
+\usepackage[margin=0.5in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{changepage}
+\usepackage{xeCJK}
+\setCJKmainfont{MS Mincho} % for \rmfamily
+\setCJKsansfont{MS Gothic} % for \sffamily
+
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont[Mapping=tex-text]{Hoefler Text}
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+\usepackage[compact]{titlesec}
+
+\titleformat*{\section}
+	{\fontsize{11pt}{12pt}\selectfont\bfseries}
+
+\pagenumbering{gobble}
+
+\begin{document}
+\begingroup
+	\fontsize{20pt}{12pt}\selectfont
+	\textbf{Elise M. McEllhiney}\\
+\endgroup
+\rule{\textwidth}{1.5pt}
+\begin{center}
+\vspace{-0.6em}
+\small{4628 Roberts Street, Shawnee KS 66226 $\cdot$ 913.530.0929 $\cdot$ elisemmc@gmail.com $\cdot$ https://www.github.com/elisemmc}
+\end{center}
+
+\fontsize{9pt}{11pt}\selectfont
+
+\section*{EDUCATION}
+\vspace{-1em}
+\rule{\textwidth}{1pt}\\
+\begin{adjustwidth}{0.2in}{0in}
+\vspace{-1em}
+\textbf{Master of Science in Computer Engineering} \hfill \textit{Anticipated December 2017}\\
+\textit{The University of Kansas, Lawrence, Kansas}\\
+\rule{7.3in}{0.5pt}\\
+\textbf{Bachelor of Science in Computer Engineering} \hfill \textit{Graduated May 2016}\\
+\textit{The University of Kansas, Lawrence, Kansas}\\
+$\circ$ Graduated with Honors with Distinction, Cumulative GPA: 3.9\\
+$\circ$ Completed all requirements of University Honors Program\\
+\rule{7.3in}{0.5pt}\\
+\textbf{Bachelor of Arts in East Asian Studies with Japanese Language Concentration} \hfill \textit{Anticipated December 2016}\\
+\textit{The University of Kansas, Lawrence, Kansas}\\
+\rule{7.3in}{0.5pt}\\
+\textbf{Study Abroad} \hfill \textit{2013-2014}\\
+\textit{J.F. Obirin University, Machida, Japan}\\
+$\circ$ Academic Japanese immersion in a college setting at J.F. Obirin University\\
+$\circ$ Courses taken: 日本語（コア、発音、漢字、文法）文化、美術史と文学の授業を受けました。\\
+$\circ$ Lived with a Japanese host family\\
+\end{adjustwidth}
+
+\section*{PROFESSIONAL EXPERIENCE}
+\vspace{-1em}
+\rule{\textwidth}{1pt}\\
+\begin{adjustwidth}{0.2in}{0in}
+\vspace{-1em}
+\textbf{University of Kansas} \hfill \textit{Graduate Teaching Assistant for EECS 541 (Senior Design), Fall 2016-Present}\\
+$\circ$ Design and teach labs that prepare students to choose and implement senior design projects\\
+$\circ$ Assist seniors majoring in computer engineering with completing their senior design projects\\
+\rule{7.3in}{0.5pt}\\
+\textbf{University of Kansas} \hfill \textit{Undergraduate Research Assistant, Fall 2015-Fall 2016}\\
+$\circ$ Implemented CUDA to run real time FFT and CFAR processing for FPGA based radar to improve processing speed by 20x\\
+$\circ$ Integrated CUDA into ROS environment to facilitate collision detection functionality for the auto-pilot of a fixed wing drone\\
+\rule{7.3in}{0.5pt}\\
+\textbf{Bentley Systems Incorporated, Olathe, Kansas} \hfill \textit{Software Engineering Intern, Summer 2016}\\
+$\circ$ Worked in a SCRUM developer team adding features on Bentley's new CONNECT website\\
+\rule{7.3in}{0.5pt}\\
+\textbf{Garmin, Olathe, Kansas} \hfill \textit{Software Engineering Intern, Summer 2015}\\
+$\circ$ Refactored Dynamic Fuel Stops feature in the Zumo 590 product\\
+$\circ$ Performed bug fixes and added further functionality to existing code\\
+\rule{7.3in}{0.5pt}\\
+\textbf{English Teacher, Machida, Japan} \hfill \textit{During Study Abroad 2013-2014}\\
+$\circ$ Provided English instruction for a group of twelve Japanese engineers\\
+$\circ$ Assisted with children's English class\\
+\rule{7.3in}{0.5pt}\\
+\textbf{Honeywell International Inc., Kansas City, Missouri} \hfill \textit{Engineering Intern, Summer 2013}\\
+$\circ$ Designed and implemented software for tracking locations of lab equipment\\
+$\circ$ Created user interface for component tracking program\\
+$\circ$ Department of Energy Q Security Clearance\\
+\rule{7.3in}{0.5pt}\\
+\textbf{Grundfos Pumps Corporation, Olathe, Kansas} \hfill \textit{Engineering Intern, Summer 2012}\\
+$\circ$ Designed and implemented software for destructive testing to determine the service lifetime of pumps\\
+$\circ$ Modified and tested circuit boards, creating components when necessary\\
+$\circ$ Assisted mechanical engineering section with parts prototyping using CNC mill and 3D printing\\
+\end{adjustwidth}
+
+\section*{SKILLS}
+\vspace{-1em}
+\rule{\textwidth}{1pt}\\
+\begin{adjustwidth}{0.2in}{0in}
+\vspace{-1em}
+\textbf{Computer}\\
+$\circ$ C++, C, CUDA, Python, Haskell, C\#, JavaScript, Java, SQL Server, Scheme(Racket), and Matlab Programming\\
+$\circ$ SolidWorks 3D Modeling, CATIA 3D Modeling\\
+\textbf{Other}\\
+$\circ$ Fluent in Japanese\\
+$\circ$ Soldering, CNC Milling, 3D Printer, and Engine Lathe\\
+\end{adjustwidth}
+
+\section*{ACTIVITIES}
+\vspace{-1em}
+\rule{\textwidth}{1pt}\\
+\begin{adjustwidth}{0.2in}{0in}
+\vspace{-1em}
+ACM, IEEE, Programming Club, KU Street Performance Club,\\
+桜風エイサー部 (Traditional Japanese Drum and Dance club), 吹奏楽部 (Japanese Band),\\
+一期一会サークル (International Exchange Student Group), 英会話サークル (English Conversation Circle),\\
+Japanese Student Association, Anime Club\\
+Played lead Tenor Saxophone in Kansas City Youth Jazz Band 2006-2011\\Played Tenor Saxophone in KU Combo 2012-2013\\
+\end{adjustwidth}
+
+\section*{HONORS}
+\vspace{-1em}
+\rule{\textwidth}{1pt}\\
+\begin{adjustwidth}{0.2in}{0in}
+\vspace{-1em}
+University of Kansas: Watkins-Burger Scholarship, Garmin Scholarship, Dean's Scholarship, Dean's List\\
+Golden Key, National Honors Society, Kansas American Legion Girls State (All State Lawyer)\\
+Kansas State University: Putnam Scholarship, Dean's Scholarship
+\end{adjustwidth}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}  
